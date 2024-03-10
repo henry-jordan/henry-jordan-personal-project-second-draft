@@ -1,0 +1,38 @@
+.welcome-container{
+    position: absolute;
+    position:absolute; 
+    left:50%; 
+    top: 20%;
+    transform: translateX(-50%);
+}
+.welcome-content{
+    animation: fade-in 0.25s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    z-index: 10;
+}
+.welcome-title{
+    font-weight: bold;
+    font-size:xx-large;
+}
+.welcome-text{
+    width: 55vw;
+    white-space: pre-wrap;
+}
+.welcome-blur{
+    animation: fade-in-static 0.25s ease-in-out;
+    position: absolute;
+    left:50%; 
+    top: 50%;
+    transform: translate(-50%, -25%);
+    width: 100vw;
+    height: 200vh;
+    backdrop-filter: blur(8px) brightness(0.6);
+    z-index: 9;
+}
+.fade-out{
+    animation: fade-out 0.1s ease-in-out;
+}
